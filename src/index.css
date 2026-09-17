@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Outfit:wght@300;400;500;600&display=swap');
+@import 'tailwindcss';
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background: #f5ede0;
+  color: #3d2010;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #ecdcc6; }
+::-webkit-scrollbar-thumb { background: #4a7c3a; border-radius: 2px; }
+
+@keyframes floatPearl {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  40%  { transform: translateY(-8px) rotate(4deg); }
+  70%  { transform: translateY(4px) rotate(-3deg); }
+}
+
+@keyframes leafSway {
+  0%, 100% { transform: rotate(-6deg) scale(1); }
+  50%  { transform: rotate(6deg) scale(1.04); }
+}
